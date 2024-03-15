@@ -1,0 +1,124 @@
+@media only screen and (max-width:694px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    #ytd-menu-logo{
+        width: 100px;
+    }
+    #ytd-menu-logo .bx-logo-name{
+        gap: 10px;
+        padding-left: 0px;
+       
+    }
+    #src-bx .bx-input-src{
+        display: none;
+    }
+    .icon-src{
+        width: 35px;
+        height: 35px;
+        background-color: #222222;
+        border: none;
+        border-radius: 50%;
+        margin-right:0px;
+        padding:0px;
+        transition: 0.5;
+    }
+    .icon-src:hover{
+        transition: 0.5s;
+        background-color: #3F3F3F;
+    }
+    #ytd-bx-icons{
+        gap: 15px;
+        padding-right: 0px;
+    }
+    #ytd-bx-icons .bx-cnt-ntf{
+        display: none;
+    }
+    #ytd-bx-icons .bx-cnt-mobile{
+        display: inline-block;
+        width: 35px;
+        height:35px;
+        background-color: #222222;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5;
+    }
+    #ytd-bx-icons .bx-cnt-mobile img{
+        width: 25px
+    }
+    #ytd-bx-icons .bx-cnt-mobile:hover{
+        transition: 0.5s;
+        background-color: #3F3F3F;
+    }
+    .icon-mic{
+        display: none;
+    }
+    #scroll-container{
+        display: none;
+    }
+    .bx-menu{
+        display: none;
+    }
+    .videos{
+        position: relative;
+        justify-content: center;
+        gap: 20px;
+        left: 0px;
+    }
+    .videos .box-video{
+        width: 250px;
+    }  
+}
+@media only screen and (min-width:695px){
+    @media only screen and (max-width:803px){
+        #src-bx .bx-input-src{
+            width: 350px;
+        }
+        #ytd-bx-icons .bx-cnt-ntf{
+            display: none;
+        }
+        .icon-mic{
+            display: none;
+        }
+        #scroll-container{
+            display: none;
+        }
+        .bx-menu{
+            width: 210px;
+            top: 100px;
+        }
+        .videos{
+            gap: 10px;
+            left: 230px;
+        }
+        .videos .box-video{
+            width: 250px;
+        }  
+    }
+}
+
+@media only screen and (min-width:804px){
+    @media only screen and (max-width:1060px){
+        #src-bx .bx-input-src{
+            width: 400px;
+        }
+        #ytd-bx-icons .bx-cnt-ntf{
+            display: none;
+        }
+        #scroll-container{
+            display: none;
+        }
+        .bx-menu{
+            top: 100px;
+        }
+        .videos{
+            gap: 18px;
+        }
+        .videos .box-video{
+            width: 250px;
+        }  
+    }
+}

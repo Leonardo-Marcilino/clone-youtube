@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="src/images/logo-youtube.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsivo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="ytd-menu-logo">
+                <div class="bx-logo-name">
+                    <div class="bx-menu-icon">
+                        <div class="line-hamburger-menu"></div>
+                        <div class="line-hamburger-menu"></div>
+                        <div class="line-hamburger-menu"></div>
+                    </div>
+                    <div class="bx-logo">
+                        <img src="src/images/logo-youtube.png" alt="Logo do YouTube" class="logo-ytd" />
+                        <img src="src/images/nome-logo.png" alt="Logo do Youtube" class="logo-ytd" />
+                        <span id="br-logo">BR</span>
+                    </div>
+                </div>
+            </div>
+            <div id="src-bx">
+                <div class="bx-input-src">
+                    <input type="text" placeholder="Pesquisar" class="input-src" />
+                    <span>
+                        <img src="src/images/teclado.png"
+                            alt="Imagem de um pequeno teclado, clicando nele você abre um teclado para digitação"
+                            class="input-teclado-img" />
+                    </span>
+                </div>
+                <button class="icon-src">
+                    <img src="src/images/search.png"
+                        alt="icon de uma lupa, clicando nela você pesquisa o conteúdo digitado" />
+                </button>
+                <button class="icon-mic">
+                    <img src="/src/images/voice-search.png"
+                        alt="Imagem de um microfone, clicando nele você consegue pesquisar por voz" />
+                </button>
+            </div>
+            <div id="ytd-bx-icons">
+                <div class="bx-cnt-mobile bx-cnt-ntf">
+                    <img src="src/images/cast.png"
+                        alt="Imagem de um cast, clicando nele você consegue trasmitir em outro dispositivo o conteúdo" />
+                </div>
+                <div class="bx-cnt-mobile bx-cnt-ntf">
+                    <img src="src/images/notifications_none.png"
+                        alt="Imagem de uma sininho de notificação, clicando nele você consegue visualizar as notificações do seu youtube" />
+                </div>
+                <div class="bx-cnt-ntf">
+                    <img src="src/images/conteudo.png"
+                        alt="Imagem de uma gravadora de video, microfone e uma camera, clicando nela você consegue postar seu conteúdo" />
+                </div>
+                <div class="bx-cnt-ntf">
+                    <img src="src/images/notificacao.png"
+                        alt="Imagem de um sino que representa as notificações de conteúdos recebidos" />
+                </div>
+                <div class="bx-perfil">L</div>
+            </div>
+            <div id="scroll-container">
+                <ul id="list-scroll">
+                    <a href="">
+                        <li id="start-list-item">Tudo</li>
+                    </a>
+                    <a href="">
+                        <li>Jogos</li>
+                    </a>
+                    <a href="">
+                        <li>Mixes</li>
+                    </a>
+                    <a href="">
+                        <li>Música</li>
+                    </a>
+                    <a href="">
+                        <li>Mangá</li>
+                    </a>
+                    <a href="">
+                        <li>CSS</li>
+                    </a>
+                    <a href="">
+                        <li>Jujutsu</li>
+                    </a>
+                    <a href="">
+                        <li>R&B</li>
+                    </a>
+                    <a href="">
+                        <li>IPhone</li>
+                    </a>
+                    <a href="">
+                        <li>One piece</li>
+                    </a>
+                    <a href="">
+                        <li>Python</li>
+                    </a>
+                    <a href="">
+                        <li>Investimento</li>
+                    </a>
+                    <a href="">
+                        <li>HTML5</li>
+                    </a>
+    
+                </ul>
+            </div>
+        </header>
+        <nav class="bx-menu"  onmouseover="mostra_scroll()" onmouseout="some_scroll()">
+            <div class="container-menu">
+                <a href="">
+                    <div class="bx-icons-menu" id="start-icon-menu">
+                        <img src="src/images/home.png" alt="Icon home, clicando nele você vai para home do youtube"
+                            title="home" />
+                        <p>Início</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/shorts.png"
+                            alt="Icon Shorts, clicando nele você vai para aba de shorts do youtube" title="shorts" />
+                        <p>Shorts</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/subscription.png"
+                            alt="Icon inscrições, clicando nele você vai para sua aba de inscrições do youtube"
+                            title="inscrições" />
+                        <p>Inscrições</p>
+                    </div>
+                </a>
+            </div>
+            <div class="line-menu"></div>
+            <div class="container-menu">
+                <div class="bx-sub-title-menu">
+                    <h2 class="sub-title-menu">Você</h2>
+                    <img src="/src/images/seta.png"
+                        alt="setinha para direta, clicando nela você acessa a aba de assistir mais tarde"
+                        title="assistir mais tarde" class="icon-seta" />
+                </div>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/history.png"
+                            alt="Icon Historico, clicando nele você vai para o seu historico no youtube" title="home" />
+                        <p>Historico</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/watch_later.png"
+                            alt="Icon Historico, clicando nele você vai para o seu historico no youtube" title="home" />
+                        <p>Historico</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/liked.png" alt="Icon home, clicando nele você vai para home do youtube"
+                            title="home" />
+                        <p>Videos com "Gostei"</p>
+                    </div>
+                </a>
+            </div>
+            <div class="line-menu"></div>
+            <div class="container-menu">
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/music-icon.png"
+                            alt="Icon musica, clicando nele você vai para aba de músicas do youtube" title="música" />
+                        <p>Música</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-sports.png"
+                            alt="Icon esportes, clicando nele você vai para aba de shorts do youtube"
+                            title="esportes" />
+                        <p>Esportes</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-games.png"
+                            alt="Icon jogos, clicando nele você vai para sua aba de jogos do youtube" title="jogos" />
+                        <p>Jogos</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-films.png"
+                            alt="Icon filmes, clicando nele você vai para sua aba de filmes do youtube"
+                            title="filmes" />
+                        <p>Filmes</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-news.png"
+                            alt="Icon filmes, clicando nele você vai para sua aba de noticias do youtube"
+                            title="noticias" />
+                        <p>Noticias</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-aovivo.png"
+                            alt="Icon filmes, clicando nele você vai para sua aba dos videos ao vivo do youtube"
+                            title="ao vivo" />
+                        <p>Ao vivo</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-360-video.png"
+                            alt="Icon filmes, clicando nele você vai para sua aba dos videos com efeito 360 do youtube"
+                            title="360 vr" />
+                        <p>Video 360°</p>
+                    </div>
+                </a>
+            </div>
+            <div class="line-menu"></div>
+            <div class="container-menu">
+                <div class="bx-sub-title-menu">
+                    <h2 class="sub-title-menu">Mais do Youtube</h2>
+                </div>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/logo-youtube.png"
+                            alt="Icon youtube, clicando nele você vai para sua aba do youtube premium"
+                            title="youtube premium" class="icon-youtubes" />
+                        <p>Youtube Premium</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-youtube-music.png"
+                            alt="Icon youtube, clicando nele você vai para o site do youtube music"
+                            title="youtube music" class="icon-youtubes" />
+                        <p>Youtube Music</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/icon-youtube-kids.png"
+                            alt="Icon youtube, clicando nele você vai para a aba do youtube kids" title="youtube kids"
+                            class="icon-youtubes icon-kids" />
+                        <p>Youtube Kids</p>
+                    </div>
+                </a>
+            </div>
+            <div class="line-menu"></div>
+            <div class="container-menu">
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/setting.png"
+                            alt="Icon configurações, clicando nele você vai para a aba de configurações"
+                            title="configurações" />
+                        <p>Configurações</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/report.png"
+                            alt="Icon historico de denúncias, clicando nele você vai para a aba do historico de denúncias"
+                            title="historico de denúncias" />
+                        <p>Historico de denúncias</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/help.png" alt="Icon ajuda, clicando nele você vai para a aba de ajuda"
+                            title="ajuda" />
+                        <p>Ajuda</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bx-icons-menu">
+                        <img src="src/images/feedback.png"
+                            alt="Icon feedback, clicando nele você vai para a aba de feedback" title="feedback" />
+                        <p>Enviar feedback</p>
+                    </div>
+                </a>
+            </div>
+            <div class="line-menu"></div>
+            <div class="bx-end-menu">
+                <div class="bx-1-end">
+                    <a href="">Sobre</a>
+                    <a href="">Imprensa</a>
+                    <a href="">Direitos autorais</a>
+                    <a href="">Entre em contato</a>
+                    <a href="">Criadores de conteúdo</a>
+                    <a href="">Publicidade</a>
+                    <a href="">Desenvolvedores</a>
+                </div>
+                <div class="bx-2-end">
+                    <a href="">Termos</a>
+                    <a href="">Privacidade</a>
+                    <a href="">Política e segurança</a>
+                    <a href="">Como funciona o YouTube</a>
+                    <a href="">Testar os novos recursos</a>
+                </div>
+                <p class="copy">© 2024 Google LLC</p>
+            </div>
+            <div class="padding-top"></div>
+        </nav>
+        <div class="videos">
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-video">
+                <div class="box-video-collumn">
+                    <div class="image-video">
+                        <img src="/src/images/img-videos/alanzoka-outlast.jpg" alt="tumb do video do alanzoka"
+                            title="alanzoka-outlast" />
+                    </div>
+                    <div class="bx-descricao-video">
+                        <div class="bx-perfil-logo">
+                            <img src="src/images/img-videos/log-chanel.jpg" alt="" class="perfil-logo" />
+                        </div>
+                        <div class="bx-dados-video">
+                            <p class="nome-video">
+                                QUASE MORRI COM O SUSTO! - OUTLAST 2 (DEMO)
+                            </p>
+                            <a class="nome-canal dados-video">Alanzoka<span>
+                                    <img src="src/images/img-videos/verified.png" alt="icon de certificação"
+                                        class="icon-certificado" /></span></a>
+                            <p class="dados-video">1,6 mi de visualizações</p>
+                            <span class="point"></span>
+                            <p class="dados-video">há 7 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

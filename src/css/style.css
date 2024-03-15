@@ -1,0 +1,346 @@
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(16, 15, 15);
+}
+main{
+    width: 100%;
+    height: auto;
+}
+header{
+    background-color: #0F0F0F;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    align-items:center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+#ytd-menu-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ytd-menu-logo .bx-logo-name{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding-left: 12px;
+   
+}
+#ytd-menu-logo .bx-menu-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#ytd-menu-logo .bx-menu-icon .line-hamburger-menu{
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+}
+.bx-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#src-bx{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+#src-bx .bx-input-src{
+    width: 536px;
+    height: 40px;
+    border: none;
+    background-color:#0F0F0F;
+    border: 0.1px solid hsla(0,100%,100%,0.1);
+    border-radius: 40px 0 0 40px;
+
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+#src-bx .bx-input-src .input-src{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: hsla(0,100%,100%,08);
+    font-weight: 500;
+}
+.icon-src{
+    width: 64px;
+    height: 40px;
+    border: none;
+    background-color: #222222;
+    border-top: 0.1px solid hsla(0,100%,100%,0.1);
+    border-bottom: 0.1px solid hsla(0,100%,100%,0.1);
+    border-right: 0.1px solid hsla(0,100%,100%,0.1);
+    border-radius: 0px 40px 40px 0px;
+ 
+    margin-right: 20px;
+    padding: 0px 10px;
+}
+.icon-mic{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #222222;
+    border-radius: 90%;
+
+    margin-right: 20px;
+}
+#ytd-bx-icons{
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-right: 20px;
+}
+#ytd-bx-icons .bx-cnt-ntf{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.bx-cnt-ntf:hover{
+    transition: 0.5s;
+    background-color: #3F3F3F;
+}
+#ytd-bx-icons .bx-cnt-mobile{
+    display: none;
+}
+#ytd-bx-icons .bx-perfil{
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   background-color: purple;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FFF;
+}
+#scroll-container{
+    position: relative;
+    width: 100%;
+    color: #FFF;
+}
+#scroll-container #list-scroll{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: -30px;
+    left: 250px;
+}
+#scroll-container li{
+    height: 32px;
+    min-width: 12px;
+    font-size: 14px;
+    padding: 0 13px;
+    background-color: #222222;
+
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+#scroll-container li:hover{
+    transition: 0.5s;
+    background-color: #3F3F3F;
+}
+#scroll-container #start-list-item{
+    background-color: #fff;
+    color: #222222;
+}
+.bx-menu{
+    width: 235px;
+    height: auto;
+    background-color: #0F0F0F;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    right: 0;
+    bottom: -120px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: gray black;
+}
+.bx-menu .container-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bx-menu .container-menu .bx-icons-menu{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 12px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.bx-menu .container-menu .bx-icons-menu:hover{
+    transition: 0.5s;
+    background-color: #3F3F3F;
+}
+.bx-menu .container-menu #start-icon-menu{
+    background-color: #222222;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.bx-menu .container-menu .bx-icons-menu p{
+    position: relative;
+    bottom: 2px;
+}
+.bx-sub-title-menu{
+    width: 200px;
+    height: 40px;
+    padding-left: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bx-sub-title-menu .sub-title-menu{
+    color: #fff;
+    font-size: 16px;
+}
+.bx-sub-title-menu .icon-seta{
+    rotate: 270deg;
+}
+.line-menu{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+}
+.icon-youtubes{
+    width: 25px;
+}
+.icon-kids{
+    rotate: -10deg;
+}
+.bx-end-menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bx-end-menu .bx-1-end{
+    width: 100%;
+    height: auto;
+    padding: 5px 12px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bx-end-menu .bx-2-end{
+    width: 100%;
+    height: auto;
+    padding: 12px 12px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bx-end-menu .bx-1-end a{
+    font-size: 13px;
+    color: #AAAAAA;
+    font-weight: 500;
+    line-height: 0.7rem;
+}
+.bx-end-menu .bx-2-end a{
+    font-size: 13px;
+    color: #AAAAAA;
+    font-weight: 500;
+    line-height: 0.7rem;
+}
+.copy{
+    font-size: 13px;
+    color: #AAAAAA;
+    font-weight: 500;
+    padding: 12px 12px 0px;
+}
+.padding-top{
+    width: 1px;
+    height: 1px;
+    margin-top: 105px;
+}
+
+.videos{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 130px;
+    left: 265px;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.videos .box-video{
+    width: 305px;
+    height: 280px;
+    border-radius: 10px 10px 0px 0px;
+}
+.box-video-collumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.image-video{
+    width: 100%;
+    height: 140p;
+    border-radius: 10px;
+}
+.image-video img{
+    width: 100%;
+    height: 140p;
+    border-radius: 10px;
+}
+.videos .box-shorts{
+    width: 195px;
+    height: 350px;
+    background-color: black;
+}
+.bx-descricao-video{
+    display: flex;
+    gap: 10px;
+}
+.perfil-logo{
+    width: 36px;
+    height: 36px;
+}
+.bx-dados-video{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+   
+}
+.point{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #AAAAAA;
+}
+.dados-video{
+    font-size: 13px;
+    color: #AAAAAA;
+}
